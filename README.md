@@ -1,50 +1,53 @@
-# GDP Growth Analysis (1960–2016)
+# GDP Analysis Project
 
-Exploratory data analysis of global GDP trends using the World Bank GDP dataset, covering 256 countries and regions from 1960 to 2016.
+<img src="https://ourworldindata.org/grapher/thumbnail/national-gdp-constant-usd-wb.png?imType=twitter" height="450">
 
 ## Overview
 
-This project loads raw GDP values by country and year, computes year-over-year GDP growth rates, and produces interactive visualizations to compare growth trajectories across countries and regions over nearly six decades.
+This repository contains a data analysis project focused on analyzing the Gross Domestic Product (GDP) of multiple countries and the world from the years 1960 to 2016. The project utilizes the `gdp_dataset.csv` dataset and Python libraries such as NumPy, Pandas, Seaborn, and Plotly for data manipulation, visualization, and analysis.
 
 ## Dataset
 
-- **Source:** World Bank GDP dataset
-- **Coverage:** 256 countries/regions, 1960–2016
-- **Fields:** Country Name, Country Code, Year, GDP Value (current US$)
+The dataset used in this project, `gdp_dataset.csv`, contains information about the GDP of various countries and the world from 1960 to 2016. It includes details such as country names, GDP values for each year, and other relevant information.
 
-## What this notebook does
+## Libraries Used
 
-- Loads and cleans the raw GDP dataset with Pandas
-- Explores dataset structure (unique countries, year range, summary statistics)
-- Computes year-over-year **GDP growth rate (%)** for each country
-- Visualizes individual country GDP trends over time
-- Compares GDP growth across all countries on a single interactive chart
-- Generates standalone HTML visualizations per country using Plotly
-- Analyzes GDP growth trends across the full 1960–2016 window for countries with complete data
+The following Python libraries were used for data analysis and visualization:
 
-## Tools & Libraries
+- NumPy: For numerical computations and array manipulation.
+- Pandas: For data manipulation and analysis.
+- Seaborn: For statistical data visualization.
+- Plotly: For interactive and dynamic data visualization.
 
-- Python
-- Pandas — data manipulation and cleaning
-- Plotly (Express + Offline) — interactive charting and HTML export
+## Project Structure
 
-## How to run
+The project is structured as follows:
 
-1. Clone the repo
-2. Install dependencies:
-   ```bash
-   pip install pandas plotly
-   ```
-3. Update the dataset path in the notebook to point to your local copy of `gdp_data.csv`
-4. Open `GDP_Analysis.ipynb` in Jupyter and run all cells
+- `GDP-Analysis.ipynb`: Jupyter Notebook containing the analysis process.
+- `gdp_dataset.csv`: The dataset used for analysis.
+- `README.md`: This file, providing an overview of the project and instructions for usage.
 
-## Sample Output
+## Analysis Steps
 
-Running the notebook generates:
-- A combined GDP comparison chart across all countries
-- Individual interactive HTML charts per country (saved to a local folder)
-- A filtered GDP growth comparison for countries with a complete 1960–2016 record
+The analysis includes the following steps:
 
-## Author
+1. **Data Loading**: Importing the dataset using Pandas.
+2. **Data Cleaning**: Handling missing values and any necessary preprocessing steps.
+3. **Exploratory Data Analysis**: Understanding the dataset's structure, summary statistics, and distribution of variables.
+4. **GDP Growth Analysis**: Visualizing the GDP growth over the years for the world and individual countries.
+5. **Top 20 GDPs**: Grouping countries' GDPs to find the top 20 GDPs.
+6. **Plotting with Plotly**: Using Plotly to create interactive graphs for the GDPs of countries and comparison graphs.
+7. **Downloading Graphs**: Saving the graphs as HTML files using plotly.offline for further analysis or sharing.
 
-Yash — SRM Institute of Science and Technology
+## How to Use
+
+To run the analysis notebook:
+
+1. Clone this repository to your local machine.
+2. Install the required Python libraries mentioned in the `GDP-Analysis` file.
+3. Open `GDP-Analysis.ipynb` in Jupyter Notebook or JupyterLab.
+4. Follow the instructions in the notebook to execute the cells and explore the dataset.
+
+## Contribution
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
